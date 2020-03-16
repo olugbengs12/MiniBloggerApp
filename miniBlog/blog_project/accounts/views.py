@@ -13,14 +13,14 @@ class SignUp(CreateView):
     template_name = "accounts/signup.html"
 
 
-def index(request):
+# def index(request):
 
-	if request.method == 'POST':
-		message = request.POST['message']
+# 	if request.method == 'POST':
+# 		message = request.POST['message']
 
-		send_mail('Sign Up',
-		 message, 
-		 settings.EMAIL_HOST_USER,
-		 ['gbengaowoeye43@gmail.com'], 
-		 fail_silently=False)
-	return render(request, 'accounts/signup.html')
+# 		send_mail('Sign Up',
+# 		 message, 
+# 		 settings.EMAIL_HOST_USER,
+# 		 ['gbengaowoeye43@gmail.com'], 
+# 		 fail_silently=False)
+# 	return render(request, 'accounts/signup.html')
